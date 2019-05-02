@@ -29,7 +29,7 @@ export ZSH_TMUX_AUTOSTART='true'
 export TERM=xterm-256color
 export ZSH=$HOME/dotfiles/oh-my-zsh
 export EDITOR=vim
-
+export TMUXINATOR_CONFIG=$HOME/dotfiles/tmuxinator
 
 export HISTSIZE=100000
 export HISTTIMEFORMAT="%d %h - %H:%M:%S "
