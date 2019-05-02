@@ -62,7 +62,7 @@ echo "4. We'll try to change it if it's not"
 
 echo "Let's get started? (y/n)"
 
-mkdir ~/.tmuxinator/
+mkdir -p ~/.tmuxinator/
 cp  ~/dotfiles/tmuxinator/chris.yml ~/.tmuxinator/
 
 old_stty_cfg=$(stty -g)
@@ -89,7 +89,7 @@ echo
 
 #Add Pub keys to authorized key file
 KEYFILE=~/.ssh/authorized_keys
-
+mkdir -p ~/.ssh/
 for FILE in ~/dotfiles/pubkeys/*; do
     KEY=`cat $FILE`
     grep -qF -- "$KEY" "$KEYFILE" || echo "$KEY" >> "$KEYFILE"
