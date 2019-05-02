@@ -51,6 +51,10 @@ check_default_shell() {
 }
 
 echo "We're going to do the following:"
+echo "On AWS change password so we can change shell to zsh "
+echo "sudo passwd ubuntu"
+echo "sudo apt-get update -y ; sudo apt-get upgrade -y"
+echo "--------"
 echo "1. Check to make sure you have zsh, vim, and tmux, tmuxinator installed"
 echo "2. We'll help you install them if you don't"
 echo "3. We're going to check to see if your default shell is zsh"

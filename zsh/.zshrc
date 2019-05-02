@@ -24,7 +24,6 @@ export GOPATH=$GOPATH:~/gocode
 export GOBIN=~/go/bin
 
 
-export HOMEBREW_GITHUB_API_TOKEN=86deda1a5bb5acf321a5daac8c8b086cf44c8bbc
 export ZSH_TMUX_AUTOSTART='true'
 export TERM=xterm-256color
 export ZSH=$HOME/dotfiles/oh-my-zsh
