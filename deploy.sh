@@ -87,6 +87,18 @@ check_for_software tmuxinator
 echo
 
 
+#Add Pub keys to authorized key file
+KEYFILE=~/.ssh/authorized_keys
+
+for FILE in ~/dotfiles/pubkeys/*; do
+    KEY=`cat $FILE`
+    grep -qF -- "$KEY" "$KEYFILE" || echo "$KEY" >> "$KEYFILE"
+done
+
+
+
+
+
 
 check_default_shell
 
