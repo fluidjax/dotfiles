@@ -1,19 +1,12 @@
 
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
 
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
-bindkey -v
-bindkey    "^[[3~"          delete-char
-bindkey    "^[3;5~"         delete-char
-bindkey "[D" backward-word
-bindkey "[C" forward-word
-bindkey "^[a" beginning-of-line
-bindkey "^[e" end-of-line
-
 #completion
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
 autoload -U compinit
 compinit
 
@@ -56,7 +49,6 @@ plugins=(
  zsh-autosuggestions
 )
 
-
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vi_mode dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
@@ -69,4 +61,12 @@ POWERLEVEL9K_VI_COMMAND_MODE_STRING="☆ "
 source ~/dotfiles/zsh/aliases
 source $ZSH/oh-my-zsh.sh
 
+
+bindkey -v
+bindkey    "^[[3~"          delete-char
+bindkey    "^[3;5~"         delete-char
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line
 
