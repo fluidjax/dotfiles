@@ -112,7 +112,6 @@ else
     if [ -f "$ZSH_CUSTOM/$ZSH_THEME.zsh-theme" ]; then
       source "$ZSH_CUSTOM/$ZSH_THEME.zsh-theme"
     elif [ -f "$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme" ]; then
-echo "$ZSH_CUSTOM / themes / $ZSH_THEME.zsh-theme"
       source "$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme"
     else
         echo "4"
