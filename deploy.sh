@@ -55,15 +55,13 @@ echo "On AWS change password so we can change shell to zsh "
 echo "sudo passwd ubuntu"
 echo "sudo apt-get update -y ; sudo apt-get upgrade -y"
 echo "--------"
-echo "1. Check to make sure you have zsh, vim, and tmux, tmuxinator installed"
+echo "1. Check to make sure you have zsh, vim, and tmux  installed"
 echo "2. We'll help you install them if you don't"
 echo "3. We're going to check to see if your default shell is zsh"
 echo "4. We'll try to change it if it's not"
-
+echo "5. Copy keys in dir (pubkeys) into authorized_keys"
 echo "Let's get started? (y/n)"
 
-mkdir -p ~/.tmuxinator/
-cp  ~/dotfiles/tmuxinator/chris.yml ~/.tmuxinator/
 
 old_stty_cfg=$(stty -g)
 stty raw -echo
@@ -82,8 +80,6 @@ echo
 check_for_software vim
 echo
 check_for_software tmux
-echo
-check_for_software tmuxinator
 echo
 
 

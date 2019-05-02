@@ -70,3 +70,8 @@ bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
+#auto start session
+#if [ -z "$TMUX" ]; then
+#    tmux attach -t chris || tmux new -s chris
+#fi
+

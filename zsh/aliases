@@ -1,5 +1,5 @@
 #alias t="tmux new -A -s chris"
-alias t='tmuxinator chris'
+alias t='tmux a'
 alias durian="ssh root@192.168.0.140";
 alias ls='ls -G'
 alias a='atom'
