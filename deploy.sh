@@ -61,6 +61,9 @@ echo "3. We're going to check to see if your default shell is zsh"
 echo "4. We'll try to change it if it's not"
 
 echo "Let's get started? (y/n)"
+
+cp -p ~/dotfiles/tmuxinator/chris.yml ~/.tmuxinator/
+
 old_stty_cfg=$(stty -g)
 stty raw -echo
 answer=$( while ! head -c 1 | grep -i '[ny]' ;do true ;done )
