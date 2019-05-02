@@ -1,0 +1,15 @@
+#alias t="tmux new -A -s chris"
+alias t='tmuxinator chris'
+alias durian="ssh root@192.168.0.140";
+alias ls='ls -G'
+alias a='atom'
+alias bitcoin="open /Applications/Bitcoin-Qt.app --args -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin"
+alias bitcoint="open /Applications/Bitcoin-Qt.app --args -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin -testnet"
+alias btcd="bitcoind -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin"
+alias btcdt="bitcoind -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin -testnet"
+alias c='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
+alias code=c
+alias history="history -1000000"
+alias depview="dep status -dot | dot -T png | open -f -a /Applications/Preview.app"
+alias q='cd ~/gocode/src/code.qredo.net'
+alias grs='gr @qredo status'
