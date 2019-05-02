@@ -62,7 +62,8 @@ echo "4. We'll try to change it if it's not"
 
 echo "Let's get started? (y/n)"
 
-cp -p ~/dotfiles/tmuxinator/chris.yml ~/.tmuxinator/
+mkdir ~/.tmuxinator/
+cp  ~/dotfiles/tmuxinator/chris.yml ~/.tmuxinator/
 
 old_stty_cfg=$(stty -g)
 stty raw -echo
