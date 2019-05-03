@@ -1,3 +1,26 @@
+
+cd "$(dirname "$0")"
+
+
+
+# Stuff to do manually or maybe automate later
+
+# Copy config/hosts into /etc/hosts for spam/bad actor protection
+# .gitconfig
+
+# Xcode 
+# 	xcode-select --install 2>&1 > /dev/null
+# 	sudo xcode-select -s /Applications/Xcode.app/Contents/Developer 2>&1 > /dev/null
+# 	sudo xcodebuild -license accept 2>&1 > /dev/null
+
+# Brew
+#  	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# 	brew tap caskroom/versions
+
+
+
+
+
 prompt_install() {
 	echo -n "$1 is not installed. Would you like to install it? (y/n) " >&2
 	old_stty_cfg=$(stty -g)
@@ -91,31 +114,18 @@ for FILE in ~/dotfiles/pubkeys/*; do
     grep -qF -- "$KEY" "$KEYFILE" || echo "$KEY" >> "$KEYFILE"
 done
 
+##Add Public keys to authorized_keys files
+./add_public_keys.sh
 
-
+##Make symlinks to config files in home dir
+./symlinks.sh
 
 
 
 check_default_shell
 
-echo
-echo -n "Would you like to backup your current dotfiles? (y/n) "
-old_stty_cfg=$(stty -g)
-stty raw -echo
-answer=$( while ! head -c 1 | grep -i '[ny]' ;do true ;done )
-stty $old_stty_cfg
-if echo "$answer" | grep -iq "^y" ;then
-	mv ~/.zshrc ~/.zshrc.old
-	mv ~/.tmux.conf ~/.tmux.conf.old
-	mv ~/.vimrc ~/.vimrc.old
-else
-	echo -e "\nNot backing up old dotfiles."
-fi
-
 printf "source '$HOME/dotfiles/zsh/.zshrc'" > ~/.zshrc
 printf "so $HOME/dotfiles/vim/.vimrc" > ~/.vimrc
 printf "source-file $HOME/dotfiles/tmux/.tmux.conf" > ~/.tmux.conf
 
-echo
-echo "Please log out and log back in for default shell to be initialized."
 
