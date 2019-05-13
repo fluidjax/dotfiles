@@ -7,7 +7,7 @@ alias bitcoin="open /Applications/Bitcoin-Qt.app --args -datadir=/Volumes/88MPH/
 alias bitcoint="open /Applications/Bitcoin-Qt.app --args -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin -testnet"
 alias btcd="bitcoind -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin"
 alias btcdt="bitcoind -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin -testnet"
-alias c='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
+alias c='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code -n'
 alias code=c
 alias history="history -1000000"
 alias depview="dep status -dot | dot -T png | open -f -a /Applications/Preview.app"

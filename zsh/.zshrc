@@ -29,7 +29,7 @@ export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth
 export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
-export HISTFILE=~/.zsh_history
+export HISTFILE=$HOME/dotfiles/zsh/.zsh_history
 export SAVEHIST=99999
 setopt HIST_IGNORE_ALL_DUPS
 export KEYTIMEOUT=1
@@ -74,4 +74,7 @@ bindkey "^[e" end-of-line
 #if [ -z "$TMUX" ]; then
 #    tmux attach -t chris || tmux new -s chris
 #fi
+
+#autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
