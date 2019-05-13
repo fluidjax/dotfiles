@@ -1,4 +1,9 @@
 # Most recently edited files in Vim (version 3.0)
+/Users/chris/gocode/src/code.qredo.net/revendor.sh
+/Users/chris/gocode/src/code.qredo.net/up/chris/mobileproxy
+/Users/chris/gocode/src/code.qredo.net/up/chris/up
+/Users/chris/gocode/src/code.qredo.net/up/chris/custodymobile
+/Users/chris/dotfiles/deploy.sh
 /Users/chris/mp3/doit
 /Users/chris/gocode/src/code.qredo.net/custodynode/go.mod
 /Users/chris/gocode/src/code.qredo.net/mobilesimulator/go.mod
@@ -8,7 +13,6 @@
 /Users/chris/gocode/src/code.qredo.net/up/chris/README.md
 /Users/chris/gocode/src/code.qredo.net/revendor.sg
 /Users/chris/gocode/src/code.qredo.net/up/chris/exportkeys
-/Users/chris/gocode/src/code.qredo.net/up/chris/up
 /Users/chris/gocode/src/code.qredo.net/up/chris/importkeys
 /Users/chris/gocode/src/code.qredo.net/up/chris/exportkey
 /Users/chris/gocode/src/code.qredo.net/up/chris/keydump
@@ -21,7 +25,6 @@
 /Users/chris/gocode/src/code.qredo.net/up/chris/down
 /Users/chris/dotfiles/symlinks.sh
 /Users/chris/dotfiles/config_symlinks.sh
-/Users/chris/dotfiles/deploy.sh
 /private/etc/hosts
 /etc/hosts
 /Users/chris/dotfiles/tmux/.tmux.conf
@@ -50,7 +53,6 @@
 /Users/chris/backup/qredo/repos.txt
 /Users/chris/backup/qredo/doit
 /Users/chris/backup/qredo/repos_test.txt
-/Users/chris/gocode/src/code.qredo.net/up/chris/custodymobile
 /Users/chris/json
 /Users/chris/gocode/src/code.qredo.net/up/chris/.zshrc
 /Users/chris/gocode/src/code.qredo.net/up/chris/custodynode

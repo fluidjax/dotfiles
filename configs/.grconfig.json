@@ -8,7 +8,9 @@
       "/Users/chris/gocode/src/code.qredo.net/hdwallet",
       "/Users/chris/gocode/src/code.qredo.net/libcustody",
       "/Users/chris/gocode/src/code.qredo.net/mobilesimui",
-      "/Users/chris/gocode/src/code.qredo.net/mobilesimulator"
+      "/Users/chris/gocode/src/code.qredo.net/mobilesimulator",
+      "/Users/chris/gocode/src/code.qredo.net/mobileproxy",
+      "/Users/chris/gocode/src/code.qredo.net/custody"
     ]
   }
 }

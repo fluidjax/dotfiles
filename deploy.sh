@@ -8,7 +8,7 @@ cd "$(dirname "$0")"
 # Copy config/hosts into /etc/hosts for spam/bad actor protection
 # .gitconfig
 
-# Xcode 
+# Xcode
 # 	xcode-select --install 2>&1 > /dev/null
 # 	sudo xcode-select -s /Applications/Xcode.app/Contents/Developer 2>&1 > /dev/null
 # 	sudo xcodebuild -license accept 2>&1 > /dev/null
@@ -16,7 +16,9 @@ cd "$(dirname "$0")"
 # Brew
 #  	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # 	brew tap caskroom/versions
-
+#   brew tap sambadevi/powerlevel9k
+#   brew install powerlevel9k mas jq tmux zsh vim wget unrar tmux
+#   mas install 587512244 918858936 425264550 1147396723 425424353 1295203466 409201541 803453959 747648890 500154009 509818877 409203825 425955336
 
 
 
