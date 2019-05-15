@@ -36,3 +36,5 @@
 	pushInsteadOf = https://gitlab.com/
 [push]
 	default = current
+[core]
+	excludesfile = ~/.gitignore
