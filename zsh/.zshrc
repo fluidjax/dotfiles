@@ -29,7 +29,7 @@ export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth
 export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
-export HISTFILE=$HOME/dotfiles/zsh/.zsh_history
+export HISTFILE=$HOME/.zsh_history
 export SAVEHIST=99999
 setopt HIST_IGNORE_ALL_DUPS
 export KEYTIMEOUT=1

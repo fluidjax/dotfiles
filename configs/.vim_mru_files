@@ -1,4 +1,6 @@
 # Most recently edited files in Vim (version 3.0)
+/Users/chris/dotfiles/zsh/.zshrc
+/Users/chris/.zshrc
 /Users/chris/gocode/src/code.qredo.net/up/chris/README.md
 /Users/chris/gocode/src/code.qredo.net/libqredopqnist/build/src/cmake_install.cmake
 /Users/chris/gocode/src/code.qredo.net/revendor.sh
@@ -29,8 +31,6 @@
 /private/etc/hosts
 /etc/hosts
 /Users/chris/dotfiles/tmux/.tmux.conf
-/Users/chris/dotfiles/zsh/.zshrc
-/Users/chris/.zshrc
 /Users/chris/dotfiles/add_public_keys.sh
 /Users/chris/.ssh/authorized_keys
 /Users/chris/.ssh/config
