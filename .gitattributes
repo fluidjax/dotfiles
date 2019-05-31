@@ -3,4 +3,4 @@ secretfile filter=git-crypt diff=git-crypt
 *.key filter=git-crypt diff=git-crypt
 *.crt filter=git-crypt diff=git-crypt
 *.gpg filter=git-crypt diff=git-crypt
-Alfred.alfredpreferences filter=git-crypt diff=git-crypt
+prefs.plist filter=git-crypt diff=git-crypt
