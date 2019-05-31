@@ -1,7 +1,7 @@
 #alias t="tmux new -A -s chris"
 alias t='tmux a'
 alias durian="ssh root@192.168.0.140";
-alias ls='ls -G'
+alias ls='ls -Galtr'
 alias a='atom'
 alias bitcoin="open /Applications/Bitcoin-Qt.app --args -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin"
 alias bitcoint="open /Applications/Bitcoin-Qt.app --args -datadir=/Volumes/88MPH/cryptocurrency/Bitcoin -testnet"
@@ -12,4 +12,4 @@ alias code=c
 alias history="history -1000000"
 alias depview="dep status -dot | dot -T png | open -f -a /Applications/Preview.app"
 alias q='cd ~/gocode/src/code.qredo.net'
-alias grs='gr @qredo status'
+alias grs='gr @qredo status | sed "s|~/gocode/src/code.qredo.net/||"'

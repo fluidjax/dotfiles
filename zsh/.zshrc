@@ -15,7 +15,7 @@ export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 export GOPATH=$GOPATH:~/gocode
 export GOBIN=~/go/bin
-
+#export GOROOT=/usr/local/Cellar/go
 
 export ZSH_TMUX_AUTOSTART='true'
 export TERM=xterm-256color
