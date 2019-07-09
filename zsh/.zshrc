@@ -15,7 +15,7 @@ export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 export GOPATH=$GOPATH:~/gocode
 export GOBIN=~/go/bin
-#export GOROOT=/usr/local/Cellar/go
+#export GOROOT=/usr/local/Cellar/go/1.12.5/
 
 export ZSH_TMUX_AUTOSTART='true'
 export TERM=xterm-256color
@@ -77,4 +77,9 @@ bindkey "^[e" end-of-line
 
 #autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+
+function mark {
+        export $1="`pwd`";
+}
 

@@ -70,17 +70,21 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>-1</integer>
+				<integer>116</integer>
 				<key>hotmod</key>
-				<integer>131072</integer>
+				<integer>8650752</integer>
 				<key>hotstring</key>
-				<string>double tap</string>
+				<string>⇞</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.google.Chrome</string>
+				</array>
 				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
@@ -93,14 +97,14 @@
 			<key>config</key>
 			<dict>
 				<key>command</key>
-				<integer>6</integer>
+				<integer>5</integer>
 				<key>confirm</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.systemcommand</string>
 			<key>uid</key>
-			<string>7226F648-0CCD-46C3-947E-2A17C3098355</string>
+			<string>858DFE84-663B-4321-AD7E-6CBFE45C63AB</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -123,14 +127,14 @@
 			<key>config</key>
 			<dict>
 				<key>command</key>
-				<integer>5</integer>
+				<integer>6</integer>
 				<key>confirm</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.systemcommand</string>
 			<key>uid</key>
-			<string>858DFE84-663B-4321-AD7E-6CBFE45C63AB</string>
+			<string>7226F648-0CCD-46C3-947E-2A17C3098355</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -146,30 +150,30 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 		<key>1B8BD524-02A4-4CD2-A94F-A1582D036419</key>
 		<dict>
 			<key>xpos</key>
-			<integer>355</integer>
+			<integer>350</integer>
 			<key>ypos</key>
-			<integer>670</integer>
+			<integer>260</integer>
 		</dict>
 		<key>408C3313-4A91-46C7-AE29-289DFAED0B62</key>
 		<dict>
 			<key>xpos</key>
-			<integer>75</integer>
+			<integer>100</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>255</integer>
 		</dict>
 		<key>7226F648-0CCD-46C3-947E-2A17C3098355</key>
 		<dict>
 			<key>xpos</key>
-			<integer>695</integer>
+			<integer>570</integer>
 			<key>ypos</key>
-			<integer>660</integer>
+			<integer>260</integer>
 		</dict>
 		<key>858DFE84-663B-4321-AD7E-6CBFE45C63AB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1050</integer>
+			<integer>825</integer>
 			<key>ypos</key>
-			<integer>675</integer>
+			<integer>255</integer>
 		</dict>
 	</dict>
 	<key>version</key>
