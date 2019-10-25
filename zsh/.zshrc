@@ -2,6 +2,27 @@
 
 
 
+function run() {
+    number=$1
+    shift
+    for n in $(seq $number); do
+      $@
+    done
+}
+
+
+netpid() {
+    if [ $# -eq 0 ]; then
+        sudo lsof -iTCP -sTCP:LISTEN -n -P
+    elif [ $# -eq 1 ]; then
+        sudo lsof -iTCP -sTCP:LISTEN -n -P | grep -i --color $1
+    else
+        echo "Usage: listening [pattern]"
+    fi
+}
+
+
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 #completion
@@ -10,12 +31,13 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 autoload -U compinit
 compinit
 
-export PATH=$HOME/bin:$HOME/scripts:/usr/local/bin:$PATH:$HOME/gocode/config/bin:.:/Users/chris/gocode/src/code.qredo.net/up/chris
+export PATH=$PATH:$HOME/bin:$HOME/scripts:/usr/local/bin:$HOME/gocode/config/bin:.:/Users/chris/gocode/src/code.qredo.net/up/chris:/usr/local/sbin:/Users/chris/.asdf/installs/ruby/2.6.5/bin/ruby
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
-export GOPATH=$GOPATH:~/gocode
+export GOPATH=$GOPATH
 export GOBIN=~/go/bin
-#export GOROOT=/usr/local/Cellar/go/1.12.5/
+export GO111MODULE=on
+export GOROOT=/usr/local/Cellar/go/1.13.3/libexec
 
 export ZSH_TMUX_AUTOSTART='true'
 export TERM=xterm-256color
@@ -23,15 +45,35 @@ export ZSH=$HOME/dotfiles/oh-my-zsh
 export EDITOR=vim
 export TMUXINATOR_CONFIG=$HOME/dotfiles/tmuxinator
 
-export HISTSIZE=100000
-export HISTTIMEFORMAT="%d %h - %H:%M:%S "
-export HISTSIZE=100000
-export HISTFILESIZE=100000
-export HISTCONTROL=ignoreboth
-export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
-export HISTFILE=$HOME/.zsh_history
-export SAVEHIST=99999
-setopt HIST_IGNORE_ALL_DUPS
+#export LDFLAGS="-L/usr/local/opt/ruby/lib"
+#export CPPFLAGS="-I/usr/local/opt/ruby/include"
+#export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+
+eval "$(rbenv init -)"
+
+
+
+#export HISTSIZE=100000
+#export HISTTIMEFORMAT="%d %h - %H:%M:%S "
+#export HISTSIZE=100000
+#export HISTFILESIZE=100000
+#export HISTCONTROL=ignoreboth
+#export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
+#export HISTFILE=$HOME/.zsh_history
+#export SAVEHIST=99999
+#setopt HIST_IGNORE_ALL_DUPS
+
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=100000
+SAVEHIST=$HISTSIZE
+setopt hist_ignore_all_dups # remove older duplicate entries from history
+setopt hist_reduce_blanks # remove superfluous blanks from history items
+setopt inc_append_history # save history entries as soon as they are entered
+setopt share_history # share
+
+
+
+
 export KEYTIMEOUT=1
 
 # Path to your oh-my-zsh installation.
@@ -46,6 +88,7 @@ plugins=(
  osx
  colored-man-pages
  zsh-syntax-highlighting
+ history-substring-search
  zsh-autosuggestions
 )
 
@@ -69,6 +112,13 @@ bindkey "[D" backward-word
 bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
+
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+bindkey '^P' history-search-backward
+bindkey '^N' history-search-forward
+
+
 
 #auto start session
 #if [ -z "$TMUX" ]; then

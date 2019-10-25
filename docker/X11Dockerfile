@@ -1,0 +1,21 @@
+
+FROM ubuntu
+ARG USER
+ARG REPO
+ARG BRANCH
+ENV USER=qredo
+ENV REPO=QredoTendermint
+ENV BRANCH=master
+
+ARG ssh_prv_key
+ARG ssh_pub_key
+
+RUN apt-get update && \
+    apt-get install -y \
+        git \
+        openssh-server  
+
+# Add the keys and set permissions
+RUN mkdir -p /root/.ssh/
+RUN echo "$ssh_pub_key" > /root/.ssh/authorized_keys
+

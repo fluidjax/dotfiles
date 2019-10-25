@@ -38,3 +38,5 @@
 	excludesfile = ~/.gitignore
 [credential]
 	helper = !/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/bin/java -Ddebug=false -Djava.net.useSystemProxies=true -jar /usr/local/Cellar/git-credential-manager/2.0.4/libexec/git-credential-manager-2.0.4.jar
+[gui]
+	recentrepo = /Users/chris/scripts

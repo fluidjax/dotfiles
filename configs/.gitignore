@@ -49,3 +49,9 @@ _local
 .vscode
 target
 
+
+#VSC
+*.code-workspace
+go.sum
+debug
+
