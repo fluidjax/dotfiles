@@ -31,7 +31,7 @@ autoload -U compinit
 compinit
 
 export PATH=$PATH:/usr/local/bin/
-export PATH=$PATH:$HOME/bin:$HOME/scripts:/usr/local/bin:$HOME/gocode/config/bin:.:/Users/chris/gocode/src/code.qredo.net/up/chris:/usr/local/sbin:/Users/chris/.asdf/installs/ruby/2.6.5/bin/ruby
+export PATH=$PATH:$HOME/bin:$HOME/scripts:/usr/local/bin:$HOME/gocode/config/bin:.:$HOME/gocode/src/code.qredo.net/up/chris:/usr/local/sbin:$HOME/.asdf/installs/ruby/2.6.5/bin/ruby
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 export GOPATH=$GOPATH
@@ -49,7 +49,7 @@ export TMUXINATOR_CONFIG=$HOME/dotfiles/tmuxinator
 #export CPPFLAGS="-I/usr/local/opt/ruby/include"
 #export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 
 
@@ -151,7 +151,7 @@ bindkey -M vicmd v edit-command-line
 #autojump
 #[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-source /Users/chris/dotfiles/oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh
+source $HOME/dotfiles/oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd histdb-update-outcome
 _zsh_autosuggest_strategy_histdb_top_here() {
@@ -180,7 +180,7 @@ export GPG_TTY="$(tty)"
 gpg-connect-agent updatestartuptty /bye
 unset SSH_AGENT_PID
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-source /Users/chris/.asdf/asdf.sh
+source $HOME/.asdf/asdf.sh
 
 export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
