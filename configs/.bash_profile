@@ -47,3 +47,9 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+export GO111MODULE=on
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+export GO111MODULE=on

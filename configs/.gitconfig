@@ -12,13 +12,14 @@
 [diff]
 	tool = Kaleidoscope
 [user]
-	name = Christopher Morris
-	email = chris@morris.net
+	name = Chris Morris
+    email = chris@morris.net
+    #signingkey = 25BD35A9926796DE
     #email = chris@qredo.com
 [commit]
 	gpgsign = true
 [gpg]
-	program = /usr/local/bin/gpg
+	program = gpg
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f

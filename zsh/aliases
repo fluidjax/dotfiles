@@ -16,8 +16,10 @@ alias history="history -1000000"
 
 #qredo
 
-alias q='cd ~/dev/qredo/dta'
+alias q='cd /Users/chris/dev/qredo/assets/libs/clitools'
+alias w='/Users/chris/dev/qredo/watcher'
 alias d='cd ~/dev/qredo/qredochain'
+
 
 #alias q='cd ~/go/src/code.qredo.net/dta'
 #alias d='/Users/chris/Development/go/qredochain/app'
@@ -29,3 +31,4 @@ alias th='things.sh'
 #alias q='cd /Users/chris/Development/go/dta'
 #alias d='cd /Users/chris/Development/go/qredochain'
 
+alias acli='/Users/chris/atlassian-cli-9.1.1/acli.sh'
